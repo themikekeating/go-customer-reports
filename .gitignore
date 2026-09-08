@@ -38,3 +38,7 @@ storage/logs/*.log
 
 # Local dev
 docker-compose.override.yml
+
+# Generated tool output
+.scannerwork/
+metrics/
