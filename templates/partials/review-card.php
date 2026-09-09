@@ -29,7 +29,7 @@ if (!empty($review->rating_customer_experience)) $subRatingsH['Experience'] = fl
 <div class="card shadow-sm border-0 overflow-hidden review-card review-card-h">
     <div class="row g-0">
         <!-- Zone 1: Image -->
-        <div class="col-md-3">
+        <div class="col-md-4">
             <a href="<?= $reviewUrl ?>" class="review-card-h-img d-block">
                 <?php if (!empty($review->featured_image)): ?>
                 <img src="<?= IMAGE_BASE_URL . htmlspecialchars($review->featured_image) ?>" alt="<?= htmlspecialchars($review->name) ?>">
@@ -41,7 +41,7 @@ if (!empty($review->rating_customer_experience)) $subRatingsH['Experience'] = fl
             </a>
         </div>
         <!-- Zone 2: Details -->
-        <div class="col-md-6">
+        <div class="col-md-5">
             <div class="review-card-h-details">
                 <div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
                     <?php if (!empty($review->category_name)): ?>

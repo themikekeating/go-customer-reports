@@ -165,18 +165,22 @@ $defaultIcon = 'fa-folder-open';
 <?php if (!empty($latestReviews)): ?>
 <section class="section-alt py-5">
     <div class="container-xl">
-        <span class="section-eyebrow section-eyebrow-amber"><i class="fas fa-star me-1"></i> Expert Rated</span>
-        <h2 class="h4 mb-1 section-heading">Product Reviews</h2>
-        <p class="text-muted mb-4 mt-3">Expert ratings and honest recommendations on products that matter.</p>
-        <div class="row g-4">
-            <?php foreach ($latestReviews as $review): ?>
-            <div class="col-12">
-                <?php $reviewHorizontal = true; require __DIR__ . '/partials/review-card.php'; ?>
-            </div>
-            <?php endforeach; ?>
-            <div class="col-12">
-                <div class="text-center mt-2">
-                    <a href="<?= BASE_URL ?>/reviews" class="btn btn-outline-success btn-lg fw-bold">Browse All Reviews <i class="fas fa-arrow-right ms-2"></i></a>
+        <div class="row">
+            <div class="col-xl-10 mx-auto">
+                <span class="section-eyebrow section-eyebrow-amber"><i class="fas fa-star me-1"></i> Expert Rated</span>
+                <h2 class="h4 mb-1 section-heading">Product Reviews</h2>
+                <p class="text-muted mb-4 mt-3">Expert ratings and honest recommendations on products that matter.</p>
+                <div class="row g-4">
+                    <?php foreach ($latestReviews as $review): ?>
+                    <div class="col-12">
+                        <?php $reviewHorizontal = true; require __DIR__ . '/partials/review-card.php'; ?>
+                    </div>
+                    <?php endforeach; ?>
+                    <div class="col-12">
+                        <div class="text-center mt-2">
+                            <a href="<?= BASE_URL ?>/reviews" class="btn btn-outline-success btn-lg fw-bold">Browse All Reviews <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
